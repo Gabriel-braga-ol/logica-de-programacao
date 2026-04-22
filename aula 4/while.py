@@ -75,11 +75,84 @@
 #         break
 # print('Encerrando o programa...')
 
+# while True:
+#     nome = input('Digite o nome: ')
+#     if nome != 'Gabriel':
+#         continue
+#     senha = input('Digite a senha: ')
+#     if senha == 'cafe':
+#         break
+# print('Acesso concedido.')
+
+# v_inicial = int(input('Digite um valor inicial: '))
+# v_final = int(input('Digite um valor final: '))
+
+# x = v_inicial
+# while x <= v_final:
+#     if x % 3 == 0:
+#         print(x)
+#     x = x + 1 # variavel contadora
+
+# x = int(input('Digite um número: '))
+# cont = 1
+# while cont <= 10:
+#     resp = x * cont
+#     print(f'{x} x {cont} = {resp}')
+#     cont += 1
+
+# x = int(input('Digite um número: '))
+# y = int(input('Digite outro número: '))
+# multi = 0
+# cont = 1
+# while cont <= x:
+#     multi = multi + y
+#     cont += 1
+#     print(f'O resultado da multiplicação é {multi}')
+
+# inicial = int(input('Digite um número: '))
+# final = int(input('Digite outro número: '))
+# qtd_positivos = 0
+# qtd_pares = 0
+# qtd_impares = 0
+# soma_positivos = 0
+# soma_pares = 0
+# soma_impares = 0
+
+# i = inicial # Varaiavel contadora ou de controle
+# if inicial < final:
+#     while i <= final: # Percorre todos os núemros do intervalo
+#         if i > 0:
+#             qtd_positivos += 1
+#             soma_positivos += i # Soma o valor de i na soma dos positivos
+#         if i % 2 == 0:
+#             qtd_pares += 1
+#             soma_pares += i
+#         else:
+#             qtd_impares += 1
+#             soma_impares += i
+#         i += 1
+# media_positivo = soma_positivos / qtd_positivos
+# media_par = soma_pares / qtd_pares
+# media_impares = soma_impares / qtd_impares
+
+# print(f'Números positivos e inteiros: {qtd_positivos},')
+# print(f'Média dos números positivos e inteiros: {media_positivo},')
+# print(f'Números pares: {qtd_pares},')
+# print(f'Média dos números pares: {media_par},')
+# print(f'Números impares: {qtd_impares},')
+# print(f'Média dos números impares: {media_impares},')
+
+
+soma = 0
+qtd_num = 0
+x = 0
 while True:
-    nome = input('Digite o nome: ')
-    if nome != 'Gabriel':
+    x = int(input('Digite um número inteiro: '))
+    if x < 0:
         continue
-    senha = input('Digite a senha: ')
-    if senha == 'cafe':
+    if not x:
         break
-print('Acesso concedido.')
+    soma += x
+    qtd_num += 1
+media = soma / qtd_num
+print(f'A média dos númeos é igual a: {media}')
