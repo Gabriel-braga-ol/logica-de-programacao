@@ -143,16 +143,23 @@
 # print(f'Média dos números impares: {media_impares},')
 
 
-soma = 0
-qtd_num = 0
-x = 0
-while True:
-    x = int(input('Digite um número inteiro: '))
-    if x < 0:
-        continue
-    if not x:
-        break
-    soma += x
-    qtd_num += 1
-media = soma / qtd_num
-print(f'A média dos númeos é igual a: {media}')
+# soma = 0
+# qtd_num = 0
+# x = 0
+# while True:
+#     x = int(input('Digite um número inteiro: '))
+#     if x < 0:
+#         continue
+#     if not x:
+#         break
+#     soma += x
+#     qtd_num += 1
+# media = soma / qtd_num
+# print(f'A média dos númeos é igual a: {media}')
+
+# i = 3 
+# while i != 0:
+#     print('Miau')
+#     i -= 1
+
+print()
