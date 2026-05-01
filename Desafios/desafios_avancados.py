@@ -33,8 +33,21 @@ Instruções:
 
 # Escreva sua solução abaixo:
 
+"""
+def estatistica(*args):
+    if not args:
+        return None
+         
+    return {
+        'Maior': max(args), 
+        'Menor': min(args),
+        'Média': sum(args) / len(args),
+        'Quantidade': len(args)
+    }
 
-
+print(estatistica(5, 8, 10, 20))
+print(estatistica())
+"""
 
 # ------------------------------------------------------------
 # DESAFIO 2: Caixa Eletrônico

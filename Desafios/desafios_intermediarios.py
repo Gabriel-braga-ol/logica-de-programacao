@@ -69,10 +69,27 @@ print(f'Seu imc é: {imc:.2f} \n{classificar_imc(imc)}')
 # ------------------------------------------------------------
 
 # Escreva sua solução abaixo:
+"""
+num = int(input('Digite um número: '))
 
+def fatorial(n):
+    if n < 0:
+        print('Digite um número positivo')
+    resultado = 1
+    conta = ''
+    for i in range(n, 0, -1):
+        resultado *= i
+        conta += str(i)
+        if i > 1:
+            conta += ' x ' 
+        else:
+            conta += ' = '
+        if n == 0:
+            conta = '1'
+    return f'Fatorial de {n}: {conta} {resultado}'
 
-
-
+print(fatorial(num))
+"""   
 # ------------------------------------------------------------
 # DESAFIO 3: Tabuada Personalizada
 # ------------------------------------------------------------
@@ -94,8 +111,14 @@ print(f'Seu imc é: {imc:.2f} \n{classificar_imc(imc)}')
 
 # Escreva sua solução abaixo:
 
+"""
+def tabuada(numero, inicio=1, fim=10):
+    for i in range(inicio, fim + 1):
+        print(f'{numero} x {i} = {numero * i}')
 
-
+tabuada(7, inicio=5, fim=9)
+tabuada(7)
+"""
 
 # ------------------------------------------------------------
 # DESAFIO 4: Juros Simples e Compostos
@@ -114,8 +137,18 @@ print(f'Seu imc é: {imc:.2f} \n{classificar_imc(imc)}')
 
 # Escreva sua solução abaixo:
 
+"""
+def juros_simples(capital, taxa, tempo):
+    return (capital * (1 + taxa / 100) * tempo)
 
+def juros_composto(capital, taxa, tempo):
+    return (capital * (1 + taxa / 100) ** tempo)
 
+c = float(input('Digite o capita: '))
+t = float(input('Digite a taxa: '))
+print(f'Juros simples em 12 meses: {juros_simples(c, t, 12):.2f}')
+print(f'Juros composto em 12 meses: {juros_composto(c, t, 12):.2f}')
+"""
 
 # ------------------------------------------------------------
 # DESAFIO 5: Validação de Senha
@@ -136,6 +169,23 @@ print(f'Seu imc é: {imc:.2f} \n{classificar_imc(imc)}')
 
 # Escreva sua solução abaixo:
 
+def validar_senha(senha):
+    if len(senha) < 8:
+        return False
+    tem_letramaiuscula = False
+    tem_letraminuscula = False
+    tem_numero = False
+    for letra in senha:
+        if letra.isupper():
+            tem_letramaiuscula = True
+        elif letra.islower():
+            tem_letraminuscula = True
+        elif letra.isdigit():
+            tem_numero = True
+    return tem_letramaiuscula and tem_letraminuscula and tem_numero
+
+print(validar_senha('Senha123'))
+print(validar_senha('Senha'))
 
 
 
