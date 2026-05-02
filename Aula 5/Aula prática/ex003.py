@@ -50,7 +50,7 @@ Verificando se o arquivo existe
 """
 if existeArquivo(arquivo):
     print('Arquivo localizado')
-else:
+else: #criando o arquivo
     print('Arquivo inexistente')
     criarArquivo(arquivo)
 
