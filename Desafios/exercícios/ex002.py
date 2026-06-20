@@ -45,6 +45,6 @@ while True:
     if usuario == 'S':
         continue
     elif usuario == 'N':
-        print(f'O valor total a ser pago é de: {valor_total}')
+        print(f'O valor total a ser pago é de: R${valor_total:.2f}')
         break  
 
