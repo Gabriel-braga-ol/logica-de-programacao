@@ -1,5 +1,7 @@
-
-nums = [2, 7, 11, 15]
+"""
+Two sum problem
+"""
+nums = [11, 15, 2, 7]
 alvo = 9
 dic = {}
 
