@@ -13,7 +13,7 @@ def insert(nums, alvo):
             return i
     return len(nums)
 
-print(insert(nums, 2))
+print(insert(nums, 5))
     
    
 
